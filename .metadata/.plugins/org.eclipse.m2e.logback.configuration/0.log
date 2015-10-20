@@ -1,0 +1,207 @@
+2015-10-20 11:09:20,532 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-amazon:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-amazon/pom.xml.
+2015-10-20 11:09:21,266 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:21,271 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:21,274 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:21,274 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:23,285 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-amazon:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-amazon/pom.xml.
+2015-10-20 11:09:23,372 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-cloudflare:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-cloudflare/pom.xml.
+2015-10-20 11:09:23,431 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-digitalocean:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-digitalocean/pom.xml.
+2015-10-20 11:09:23,473 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-gandi:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-gandi/pom.xml.
+2015-10-20 11:09:23,517 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-google:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-google/pom.xml.
+2015-10-20 11:09:23,562 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-linode:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-linode/pom.xml.
+2015-10-20 11:09:23,611 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-namecheap:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-namecheap/pom.xml.
+2015-10-20 11:09:23,661 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-rackspace:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-rackspace/pom.xml.
+2015-10-20 11:09:23,706 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-twilio:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-twilio/pom.xml.
+2015-10-20 11:09:23,756 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-vultr:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-vultr/pom.xml.
+2015-10-20 11:09:23,801 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-cloudflare:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-cloudflare/pom.xml.
+2015-10-20 11:09:24,665 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:24,666 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:24,669 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:24,669 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:25,188 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:25,193 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:25,194 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:25,194 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:25,667 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:25,668 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:25,669 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:25,669 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:25,946 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-amazon:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-amazon/pom.xml.
+2015-10-20 11:09:25,992 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-digitalocean:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-digitalocean/pom.xml.
+2015-10-20 11:09:26,410 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:26,411 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:26,413 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:26,413 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:26,470 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-gandi:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-gandi/pom.xml.
+2015-10-20 11:09:26,530 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:26,531 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:26,532 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:26,533 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:26,585 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-google:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-google/pom.xml.
+2015-10-20 11:09:26,641 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:26,642 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:26,643 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:26,643 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:27,097 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-linode:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-linode/pom.xml.
+2015-10-20 11:09:27,170 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:27,170 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:27,172 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:27,172 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:27,236 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-namecheap:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-namecheap/pom.xml.
+2015-10-20 11:09:27,287 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:27,287 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:27,288 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:27,288 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:27,452 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-rackspace:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-rackspace/pom.xml.
+2015-10-20 11:09:27,538 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:27,538 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:27,539 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:27,539 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:27,650 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-twilio:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-twilio/pom.xml.
+2015-10-20 11:09:27,703 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:27,703 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:27,704 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:27,704 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:27,793 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-vultr:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-vultr/pom.xml.
+2015-10-20 11:09:27,850 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:27,850 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:27,852 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:27,852 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:28,489 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-amazon:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-amazon/pom.xml.
+2015-10-20 11:09:28,530 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-cloudflare:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-cloudflare/pom.xml.
+2015-10-20 11:09:28,553 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-digitalocean:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-digitalocean/pom.xml.
+2015-10-20 11:09:28,576 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-gandi:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-gandi/pom.xml.
+2015-10-20 11:09:28,606 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-google:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-google/pom.xml.
+2015-10-20 11:09:28,638 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-linode:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-linode/pom.xml.
+2015-10-20 11:09:28,668 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-namecheap:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-namecheap/pom.xml.
+2015-10-20 11:09:28,700 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-rackspace:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-rackspace/pom.xml.
+2015-10-20 11:09:28,736 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-twilio:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-twilio/pom.xml.
+2015-10-20 11:09:28,769 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java:roth-lib-java-api-vultr:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-vultr/pom.xml.
+2015-10-20 11:09:29,314 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:29,316 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:29,318 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:29,318 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:29,354 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:29,355 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:29,355 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:29,356 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:29,606 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:29,606 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:29,607 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:29,607 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:29,842 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:29,842 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:29,844 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:29,844 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:29,886 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:29,887 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:29,888 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:29,888 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:30,301 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:30,302 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:30,303 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:30,303 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:30,371 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:30,371 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:30,372 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:30,372 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:30,511 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:30,512 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:30,514 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:30,515 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:30,621 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:30,621 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:30,622 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:30,623 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:30,739 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:30,739 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 11:09:30,740 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 11:09:30,740 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:31:56,759 [Worker-43] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-pom:0.0.1-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-pom/pom.xml.
+2015-10-20 12:35:55,378 [Worker-46] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-pom:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-pom/pom.xml.
+2015-10-20 12:36:15,907 [Worker-43] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-pom:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-pom/pom.xml.
+2015-10-20 12:39:10,266 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-pom:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-pom/pom.xml.
+2015-10-20 12:39:37,356 [Worker-47] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-pom:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-pom/pom.xml.
+2015-10-20 12:40:17,477 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-vultr:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-vultr/pom.xml.
+2015-10-20 12:40:17,547 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:40:17,547 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:40:17,549 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:40:17,549 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:42:06,388 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-amazon:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-amazon/pom.xml.
+2015-10-20 12:42:06,445 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:42:06,446 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:42:06,447 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:42:06,447 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:42:22,941 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-cloudflare:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-cloudflare/pom.xml.
+2015-10-20 12:42:22,978 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:42:22,978 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:42:22,979 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:42:22,979 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:42:51,713 [Worker-49] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-digitalocean:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-digitalocean/pom.xml.
+2015-10-20 12:42:51,755 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:42:51,756 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:42:51,756 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:42:51,756 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:43:10,059 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:43:10,063 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:43:10,064 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:43:10,064 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:43:34,212 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:43:34,212 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:43:34,213 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:43:34,214 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:43:37,738 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:43:37,738 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:43:37,738 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:43:37,739 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:43:54,033 [Worker-49] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-gandi:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-gandi/pom.xml.
+2015-10-20 12:43:54,070 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:43:54,071 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:43:54,073 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:43:54,073 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:44:09,570 [Worker-48] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-google:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-google/pom.xml.
+2015-10-20 12:44:09,607 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:44:09,607 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:44:09,607 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:44:09,607 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:44:22,015 [Worker-50] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-linode:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-linode/pom.xml.
+2015-10-20 12:44:22,107 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:44:22,107 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 12:44:22,108 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 12:44:22,108 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:37:32,395 [Worker-84] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-namecheap:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-namecheap/pom.xml.
+2015-10-20 14:37:32,482 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:37:32,483 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:37:32,483 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:37:32,484 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:37:45,996 [Worker-73] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-rackspace:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-rackspace/pom.xml.
+2015-10-20 14:37:46,062 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:37:46,063 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:37:46,063 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:37:46,064 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:37:58,710 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:37:58,710 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:37:58,711 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:37:58,711 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:38:19,275 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:38:19,276 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:38:19,277 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:38:19,278 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:38:35,026 [Worker-85] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-twilio:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-twilio/pom.xml.
+2015-10-20 14:38:35,091 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:38:35,092 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:38:35,093 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:38:35,093 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:38:54,142 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:38:54,142 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:38:54,143 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:38:54,143 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:38:56,571 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:38:56,572 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:38:56,573 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:38:56,573 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:39:11,883 [Worker-83] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: roth.lib.java.api:roth-lib-java-api-vultr:0.2.3-SNAPSHOT @ /Users/User/Workspaces/roth-lib-java-api/roth-lib-java-api-vultr/pom.xml.
+2015-10-20 14:39:11,931 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:39:11,931 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-10-20 14:39:11,934 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-10-20 14:39:11,936 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
