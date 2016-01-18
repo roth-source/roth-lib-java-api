@@ -7,11 +7,11 @@ import roth.lib.java.api.FormJsonApiClient;
 import roth.lib.java.api.linode.data.model.LinodeError;
 import roth.lib.java.api.linode.data.request.LinodeRequest;
 import roth.lib.java.api.linode.data.response.LinodeResponse;
-import roth.lib.java.net.http.HttpHeader;
-import roth.lib.java.net.http.HttpMethod;
-import roth.lib.java.net.http.HttpProtocol;
-import roth.lib.java.net.http.HttpResponse;
-import roth.lib.java.net.http.HttpUrl;
+import roth.lib.java.http.HttpHeader;
+import roth.lib.java.http.HttpMethod;
+import roth.lib.java.http.HttpProtocol;
+import roth.lib.java.http.HttpResponse;
+import roth.lib.java.http.HttpUrl;
 
 public abstract class LinodeClient extends FormJsonApiClient<LinodeRequest, LinodeResponse<?>>
 {

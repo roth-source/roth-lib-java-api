@@ -11,7 +11,7 @@ import roth.lib.java.api.rackspace.model.Service;
 import roth.lib.java.api.rackspace.model.User;
 import roth.lib.java.api.rackspace.type.RegionType;
 import roth.lib.java.api.rackspace.type.ServiceType;
-import roth.lib.java.net.http.HttpUrl;
+import roth.lib.java.http.HttpUrl;
 
 public class IdentityClient extends RackspaceClient
 {

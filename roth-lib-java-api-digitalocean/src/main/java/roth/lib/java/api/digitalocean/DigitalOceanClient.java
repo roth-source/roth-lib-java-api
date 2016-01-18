@@ -1,11 +1,11 @@
 package roth.lib.java.api.digitalocean;
 
 import roth.lib.java.api.JsonApiClient;
-import roth.lib.java.net.http.HttpHeaders;
-import roth.lib.java.net.http.HttpProtocol;
-import roth.lib.java.net.http.HttpResponse;
-import roth.lib.java.net.http.HttpUrl;
-import roth.lib.java.net.http.type.AuthorizationType;
+import roth.lib.java.http.HttpHeaders;
+import roth.lib.java.http.HttpProtocol;
+import roth.lib.java.http.HttpResponse;
+import roth.lib.java.http.HttpUrl;
+import roth.lib.java.http.type.AuthorizationType;
 
 public abstract class DigitalOceanClient extends JsonApiClient<Object, Object>
 {
@@ -55,7 +55,7 @@ public abstract class DigitalOceanClient extends JsonApiClient<Object, Object>
 	
 	protected HttpUrl url(String service, int page)
 	{
-		return url(service).setParameter(PAGE, String.valueOf(page));
+		return url(service).addParam(PAGE, String.valueOf(page));
 	}
 	
 	@Override

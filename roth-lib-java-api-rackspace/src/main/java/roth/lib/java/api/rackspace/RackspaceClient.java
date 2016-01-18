@@ -6,7 +6,7 @@ import roth.lib.java.api.rackspace.identity.IdentityClient;
 import roth.lib.java.api.rackspace.model.AuthToken;
 import roth.lib.java.api.rackspace.model.Endpoint;
 import roth.lib.java.api.rackspace.type.ServiceType;
-import roth.lib.java.net.http.HttpResponse;
+import roth.lib.java.http.HttpResponse;
 
 public abstract class RackspaceClient extends JsonApiClient<Object, Object> implements Characters
 {

@@ -2,9 +2,9 @@ package roth.lib.java.api.vultr.client;
 
 import roth.lib.java.api.FormJsonApiClient;
 import roth.lib.java.api.vultr.request.VultrRequest;
-import roth.lib.java.net.http.HttpProtocol;
-import roth.lib.java.net.http.HttpResponse;
-import roth.lib.java.net.http.HttpUrl;
+import roth.lib.java.http.HttpProtocol;
+import roth.lib.java.http.HttpResponse;
+import roth.lib.java.http.HttpUrl;
 
 public class VultrClient extends FormJsonApiClient<VultrRequest, Object>
 {
@@ -33,7 +33,7 @@ public class VultrClient extends FormJsonApiClient<VultrRequest, Object>
 	@Override
 	protected HttpUrl url()
 	{
-		return new HttpUrl().setProtocol(HttpProtocol.HTTPS).setHost(HOST).setParameter(API_KEY, apiKey);
+		return new HttpUrl().setProtocol(HttpProtocol.HTTPS).setHost(HOST).addParam(API_KEY, apiKey);
 	}
 	
 	protected HttpUrl url(String service)

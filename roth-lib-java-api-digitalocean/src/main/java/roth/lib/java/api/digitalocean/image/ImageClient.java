@@ -22,7 +22,7 @@ public class ImageClient extends DigitalOceanClient
 	
 	public GetImagesResponse getDistributionImages()
 	{
-		return get(url(IMAGES).setParameter("type", "distribution").setParameter("per_page", "100"), GetImagesResponse.class);
+		return get(url(IMAGES).addParam("type", "distribution").addParam("per_page", "100"), GetImagesResponse.class);
 	}
 	
 	public GetImageResponse getImage(int id)
