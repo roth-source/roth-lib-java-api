@@ -14,8 +14,6 @@ public class VultrClient extends FormJsonApiClient<VultrRequest, Object>
 	protected static String BANDWIDTH		= "/bandwidth";
 	protected static String API_KEY			= "api_key";
 	
-	protected static String TIME_FORMAT		= "yyyy-MM-dd HH:mm:ss.S";
-	
 	protected String apiKey;
 	
 	protected VultrClient(String apiKey)
@@ -27,7 +25,6 @@ public class VultrClient extends FormJsonApiClient<VultrRequest, Object>
 	{
 		super(debug);
 		this.apiKey = apiKey;
-		setTimeFormat(TIME_FORMAT);
 	}
 	
 	@Override

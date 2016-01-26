@@ -1,13 +1,12 @@
 package roth.lib.java.api.linode.data.model;
 
-import java.io.Serializable;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.linode.LinodeConstants;
 
 @Entity
 @SuppressWarnings("serial")
-public class Kernel implements Serializable
+public class Kernel implements LinodeConstants
 {
 	@Property(name = "KERNELID")
 	protected Integer kernelId;

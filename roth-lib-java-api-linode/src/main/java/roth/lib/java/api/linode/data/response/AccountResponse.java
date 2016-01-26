@@ -1,18 +1,18 @@
 package roth.lib.java.api.linode.data.response;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Calendar;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.linode.LinodeConstants;
+import roth.lib.java.time.Time;
 
 @Entity
 @SuppressWarnings("serial")
-public class AccountResponse implements Serializable
+public class AccountResponse implements LinodeConstants
 {
-	@Property(name = "ACTIVE_SINCE")
-	protected Calendar activeSince;
+	@Property(name = "ACTIVE_SINCE", timeFormat = TIME_FORMAT)
+	protected Time activeSince;
 	
 	@Property(name = "TRANSFER_POOL")
 	protected Integer transferPool;
@@ -34,7 +34,7 @@ public class AccountResponse implements Serializable
 		
 	}
 	
-	public Calendar getActiveSince()
+	public Time getActiveSince()
 	{
 		return activeSince;
 	}
@@ -64,7 +64,7 @@ public class AccountResponse implements Serializable
 		return balance;
 	}
 	
-	public AccountResponse setActiveSince(Calendar activeSince)
+	public AccountResponse setActiveSince(Time activeSince)
 	{
 		this.activeSince = activeSince;
 		return this;

@@ -1,14 +1,13 @@
 package roth.lib.java.api.linode.data.model;
 
-import java.io.Serializable;
-import java.util.Calendar;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.linode.LinodeConstants;
+import roth.lib.java.time.Time;
 
 @Entity
 @SuppressWarnings("serial")
-public class NodeDisk implements Serializable
+public class NodeDisk implements LinodeConstants
 {
 	@Property(name = "LINODEID")
 	protected Integer linodeId;
@@ -16,11 +15,11 @@ public class NodeDisk implements Serializable
 	@Property(name = "DISKID")
 	protected Integer diskId;
 	
-	@Property(name = "CREATED_DT")
-	protected Calendar createdDt;
+	@Property(name = "CREATED_DT", timeFormat = TIME_FORMAT)
+	protected Time createdDt;
 	
-	@Property(name = "UPDATE_DT")
-	protected Calendar updateDt;
+	@Property(name = "UPDATE_DT", timeFormat = TIME_FORMAT)
+	protected Time updateDt;
 	
 	@Property(name = "LABEL")
 	protected String label;
@@ -52,12 +51,12 @@ public class NodeDisk implements Serializable
 		return diskId;
 	}
 	
-	public Calendar getCreatedDt()
+	public Time getCreatedDt()
 	{
 		return createdDt;
 	}
 	
-	public Calendar getUpdateDt()
+	public Time getUpdateDt()
 	{
 		return updateDt;
 	}
@@ -99,13 +98,13 @@ public class NodeDisk implements Serializable
 		return this;
 	}
 	
-	public NodeDisk setCreatedDt(Calendar createdDt)
+	public NodeDisk setCreatedDt(Time createdDt)
 	{
 		this.createdDt = createdDt;
 		return this;
 	}
 	
-	public NodeDisk setUpdateDt(Calendar updateDt)
+	public NodeDisk setUpdateDt(Time updateDt)
 	{
 		this.updateDt = updateDt;
 		return this;

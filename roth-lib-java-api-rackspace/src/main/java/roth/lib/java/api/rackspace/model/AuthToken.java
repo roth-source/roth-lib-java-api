@@ -1,21 +1,19 @@
 package roth.lib.java.api.rackspace.model;
 
-import java.io.Serializable;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.rackspace.RackspaceConstants;
+import roth.lib.java.time.Time;
 
 @Entity
 @SuppressWarnings("serial")
-public class AuthToken implements Serializable
+public class AuthToken implements RackspaceConstants
 {
 	@Property(name = "id")
 	protected String id;
 	
-	@Property(name = "expires")
-	protected Calendar expires;
+	@Property(name = "expires", timeFormat = TIME_FORMAT)
+	protected Time expires;
 	
 	public AuthToken()
 	{
@@ -27,7 +25,7 @@ public class AuthToken implements Serializable
 		return id;
 	}
 	
-	public Calendar getExpires()
+	public Time getExpires()
 	{
 		return expires;
 	}
@@ -38,7 +36,7 @@ public class AuthToken implements Serializable
 		return this;
 	}
 	
-	public AuthToken setExpires(Calendar expires)
+	public AuthToken setExpires(Time expires)
 	{
 		this.expires = expires;
 		return this;
@@ -46,7 +44,7 @@ public class AuthToken implements Serializable
 	
 	public boolean isExpired()
 	{
-		return expires.before(new GregorianCalendar());
+		return expires.isBeforeNow();
 	}
 	
 }

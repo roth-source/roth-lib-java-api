@@ -1,13 +1,11 @@
 package roth.lib.java.api.twilio;
 
-import java.io.Serializable;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
 
 @Entity
 @SuppressWarnings("serial")
-public class TwilioResponse implements Serializable
+public class TwilioResponse implements TwilioConstants
 {
 	@Property(name = "account_sid")
 	protected String accountSid;

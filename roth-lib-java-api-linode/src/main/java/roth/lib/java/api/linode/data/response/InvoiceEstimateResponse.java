@@ -1,18 +1,18 @@
 package roth.lib.java.api.linode.data.response;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Calendar;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.linode.LinodeConstants;
+import roth.lib.java.time.Time;
 
 @Entity
 @SuppressWarnings("serial")
-public class InvoiceEstimateResponse implements Serializable
+public class InvoiceEstimateResponse implements LinodeConstants
 {
-	@Property(name = "INVOICE_TO")
-	protected Calendar invoiceTo;
+	@Property(name = "INVOICE_TO", timeFormat = TIME_FORMAT)
+	protected Time invoiceTo;
 	
 	@Property(name = "PRICE")
 	protected BigDecimal price;
@@ -22,7 +22,7 @@ public class InvoiceEstimateResponse implements Serializable
 		
 	}
 	
-	public Calendar getInvoiceTo()
+	public Time getInvoiceTo()
 	{
 		return invoiceTo;
 	}
@@ -32,7 +32,7 @@ public class InvoiceEstimateResponse implements Serializable
 		return price;
 	}
 	
-	public InvoiceEstimateResponse setInvoiceTo(Calendar invoiceTo)
+	public InvoiceEstimateResponse setInvoiceTo(Time invoiceTo)
 	{
 		this.invoiceTo = invoiceTo;
 		return this;

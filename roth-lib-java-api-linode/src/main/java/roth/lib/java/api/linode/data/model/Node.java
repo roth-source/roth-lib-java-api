@@ -1,14 +1,13 @@
 package roth.lib.java.api.linode.data.model;
 
-import java.io.Serializable;
-import java.util.Calendar;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.linode.LinodeConstants;
+import roth.lib.java.time.Time;
 
 @Entity
 @SuppressWarnings("serial")
-public class Node implements Serializable
+public class Node implements LinodeConstants
 {
 	@Property(name = "LINODEID")
 	protected Integer linodeId;
@@ -19,8 +18,8 @@ public class Node implements Serializable
 	@Property(name = "PLANID")
 	protected Integer planId;
 	
-	@Property(name = "CREATE_DT")
-	protected Calendar createDt;
+	@Property(name = "CREATE_DT", timeFormat = TIME_FORMAT)
+	protected Time createDt;
 	
 	@Property(name = "LABEL")
 	protected String label;
@@ -105,7 +104,7 @@ public class Node implements Serializable
 		return planId;
 	}
 	
-	public Calendar getCreateDt()
+	public Time getCreateDt()
 	{
 		return createDt;
 	}
@@ -233,7 +232,7 @@ public class Node implements Serializable
 		return this;
 	}
 	
-	public Node setCreateDt(Calendar createDt)
+	public Node setCreateDt(Time createDt)
 	{
 		this.createDt = createDt;
 		return this;

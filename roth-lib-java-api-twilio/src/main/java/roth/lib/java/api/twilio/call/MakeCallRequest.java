@@ -1,13 +1,12 @@
 package roth.lib.java.api.twilio.call;
 
-import java.io.Serializable;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.twilio.TwilioConstants;
 
 @Entity
 @SuppressWarnings("serial")
-public class MakeCallRequest implements Serializable
+public class MakeCallRequest implements TwilioConstants
 {
 	@Property(name = "From")
 	protected String from;

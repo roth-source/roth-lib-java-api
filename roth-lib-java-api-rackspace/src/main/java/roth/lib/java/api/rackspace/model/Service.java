@@ -1,14 +1,14 @@
 package roth.lib.java.api.rackspace.model;
 
-import java.io.Serializable;
 import java.util.LinkedList;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.rackspace.RackspaceConstants;
 
 @Entity
 @SuppressWarnings("serial")
-public class Service implements Serializable
+public class Service implements RackspaceConstants
 {
 	@Property(name = "name")
 	protected String name;

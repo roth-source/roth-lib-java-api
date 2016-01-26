@@ -1,15 +1,15 @@
 package roth.lib.java.api.linode.data.response;
 
-import java.io.Serializable;
 import java.util.LinkedList;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.linode.LinodeConstants;
 import roth.lib.java.api.linode.data.model.LinodeError;
 
 @Entity
 @SuppressWarnings("serial")
-public class LinodeResponse<T> implements Serializable
+public class LinodeResponse<T> implements LinodeConstants
 {
 	@Property(name = "DATA")
 	protected T data;

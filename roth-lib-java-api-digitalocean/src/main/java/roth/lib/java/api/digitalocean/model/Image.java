@@ -1,11 +1,11 @@
 package roth.lib.java.api.digitalocean.model;
 
-import java.util.Calendar;
 import java.util.LinkedList;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
 import roth.lib.java.api.digitalocean.DigitalOceanConstants;
+import roth.lib.java.time.Time;
 
 @Entity
 @SuppressWarnings("serial")
@@ -30,7 +30,7 @@ public class Image implements DigitalOceanConstants
 	protected LinkedList<String> regions;
 	
 	@Property(name = "created_at", timeFormat = TIME_FORMAT)
-	protected Calendar createdAt;
+	protected Time createdAt;
 	
 	public Image()
 	{
@@ -67,7 +67,7 @@ public class Image implements DigitalOceanConstants
 		return regions;
 	}
 	
-	public Calendar getCreatedAt()
+	public Time getCreatedAt()
 	{
 		return createdAt;
 	}
@@ -108,7 +108,7 @@ public class Image implements DigitalOceanConstants
 		return this;
 	}
 	
-	public Image setCreatedAt(Calendar createdAt)
+	public Image setCreatedAt(Time createdAt)
 	{
 		this.createdAt = createdAt;
 		return this;

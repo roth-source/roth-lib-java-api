@@ -1,14 +1,13 @@
 package roth.lib.java.api.linode.data.model;
 
-import java.io.Serializable;
-import java.util.Calendar;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.linode.LinodeConstants;
+import roth.lib.java.time.Time;
 
 @Entity
 @SuppressWarnings("serial")
-public class NodeJob implements Serializable
+public class NodeJob implements LinodeConstants
 {
 	@Property(name = "LINODEID")
 	protected Integer linodeId;
@@ -19,14 +18,14 @@ public class NodeJob implements Serializable
 	@Property(name = "ACTION")
 	protected String action;
 	
-	@Property(name = "ENTERED_DT")
-	protected Calendar enteredDt;
+	@Property(name = "ENTERED_DT", timeFormat = TIME_FORMAT)
+	protected Time enteredDt;
 	
-	@Property(name = "HOST_START_DT")
-	protected Calendar hostStartDt;
+	@Property(name = "HOST_START_DT", timeFormat = TIME_FORMAT)
+	protected Time hostStartDt;
 	
-	@Property(name = "HOST_FINISH_DT")
-	protected Calendar hostFinishDt;
+	@Property(name = "HOST_FINISH_DT", timeFormat = TIME_FORMAT)
+	protected Time hostFinishDt;
 	
 	@Property(name = "LABEL")
 	protected String label;
@@ -60,17 +59,17 @@ public class NodeJob implements Serializable
 		return action;
 	}
 	
-	public Calendar getEnteredDt()
+	public Time getEnteredDt()
 	{
 		return enteredDt;
 	}
 	
-	public Calendar getHostStartDt()
+	public Time getHostStartDt()
 	{
 		return hostStartDt;
 	}
 	
-	public Calendar getHostFinishDt()
+	public Time getHostFinishDt()
 	{
 		return hostFinishDt;
 	}
@@ -113,19 +112,19 @@ public class NodeJob implements Serializable
 		return this;
 	}
 	
-	public NodeJob setEnteredDt(Calendar enteredDt)
+	public NodeJob setEnteredDt(Time enteredDt)
 	{
 		this.enteredDt = enteredDt;
 		return this;
 	}
 	
-	public NodeJob setHostStartDt(Calendar hostStartDt)
+	public NodeJob setHostStartDt(Time hostStartDt)
 	{
 		this.hostStartDt = hostStartDt;
 		return this;
 	}
 	
-	public NodeJob setHostFinishDt(Calendar hostFinishDt)
+	public NodeJob setHostFinishDt(Time hostFinishDt)
 	{
 		this.hostFinishDt = hostFinishDt;
 		return this;

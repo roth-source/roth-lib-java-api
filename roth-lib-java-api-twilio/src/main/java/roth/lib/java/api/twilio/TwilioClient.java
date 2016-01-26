@@ -18,8 +18,6 @@ public abstract class TwilioClient extends FormJsonApiClient<Object, TwilioRespo
 	protected static String CALLS			= "/Calls";
 	protected static String JSON			= ".json";
 	
-	protected static String TIME_FORMAT		= "EEE, d MMM yyyy HH:mm:ss Z";
-	
 	protected String accountSid;
 	protected String authToken;
 	protected String headerToken;
@@ -30,7 +28,6 @@ public abstract class TwilioClient extends FormJsonApiClient<Object, TwilioRespo
 		this.accountSid = accountSid;
 		this.authToken = authToken;
 		this.headerToken = Base64.getEncoder().encodeToString((accountSid + ":" + authToken).getBytes());
-		setTimeFormat(TIME_FORMAT);
 	}
 	
 	@Override

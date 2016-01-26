@@ -79,8 +79,6 @@ public abstract class LinodeClient extends FormJsonApiClient<LinodeRequest, Lino
 	protected static String TEST_ECHO 						= "test.echo";
 	protected static String TEST_FAIL 						= "test.fail";
 	
-	protected static String TIME_FORMAT						= "yyyy-MM-dd HH:mm:ss.S";
-	
 	protected String apiKey;
 	
 	protected LinodeClient(String apiKey)
@@ -93,7 +91,6 @@ public abstract class LinodeClient extends FormJsonApiClient<LinodeRequest, Lino
 		super(debug);
 		this.apiKey = apiKey;
 		this.debug = debug;
-		setTimeFormat(TIME_FORMAT);
 	}
 	
 	protected HttpUrl url()

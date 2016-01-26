@@ -1,15 +1,15 @@
 package roth.lib.java.api.linode.data.response;
 
-import java.io.Serializable;
 import java.util.LinkedHashMap;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.linode.LinodeConstants;
 import roth.lib.java.api.linode.data.model.Method;
 
 @Entity
 @SuppressWarnings("serial")
-public class ApiSpecResponse implements Serializable
+public class ApiSpecResponse implements LinodeConstants
 {
 	@Property(name = "VERSION")
 	protected Double version;

@@ -1,13 +1,12 @@
 package roth.lib.java.api.linode.data.request;
 
-import java.io.Serializable;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.linode.LinodeConstants;
 
 @Entity
 @SuppressWarnings("serial")
-public class LinodeRequest implements Serializable
+public class LinodeRequest implements LinodeConstants
 {
 	@Property(name = "api_key")
 	protected String apiKey;

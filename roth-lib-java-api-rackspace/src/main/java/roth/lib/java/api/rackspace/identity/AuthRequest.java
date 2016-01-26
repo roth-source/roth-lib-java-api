@@ -1,15 +1,14 @@
 package roth.lib.java.api.rackspace.identity;
 
-import java.io.Serializable;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.rackspace.RackspaceConstants;
 import roth.lib.java.api.rackspace.model.ApiKeyCredentials;
 import roth.lib.java.api.rackspace.model.AuthCredentials;
 
 @Entity
 @SuppressWarnings("serial")
-public class AuthRequest implements Serializable
+public class AuthRequest implements RackspaceConstants
 {
 	@Property(name = "auth")
 	protected AuthCredentials authCredentials;

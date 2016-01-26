@@ -1,13 +1,12 @@
 package roth.lib.java.api.linode.data.response;
 
-import java.io.Serializable;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.linode.LinodeConstants;
 
 @Entity
 @SuppressWarnings("serial")
-public class NodeBalancerConfigIdResponse implements Serializable
+public class NodeBalancerConfigIdResponse implements LinodeConstants
 {
 	@Property(name = "ConfigID")
 	protected Integer configId;

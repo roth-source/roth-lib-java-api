@@ -1,14 +1,13 @@
 package roth.lib.java.api.linode.data.model;
 
-import java.io.Serializable;
-import java.util.Calendar;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.linode.LinodeConstants;
+import roth.lib.java.time.Time;
 
 @Entity
 @SuppressWarnings("serial")
-public class StackScript implements Serializable
+public class StackScript implements LinodeConstants
 {
 	@Property(name = "STACKSCRIPTID")
 	protected Integer stackScriptId;
@@ -31,8 +30,8 @@ public class StackScript implements Serializable
 	@Property(name = "LATESTREV")
 	protected Integer latestRev;
 	
-	@Property(name = "CREATE_DT")
-	protected Calendar createDt;
+	@Property(name = "CREATE_DT", timeFormat = TIME_FORMAT)
+	protected Time createDt;
 	
 	@Property(name = "DEPLOYMENTSACTIVE")
 	protected Integer deploymentsActive;
@@ -40,8 +39,8 @@ public class StackScript implements Serializable
 	@Property(name = "REV_NOTE")
 	protected String revNote;
 	
-	@Property(name = "REV_DT")
-	protected Calendar revDt;
+	@Property(name = "REV_DT", timeFormat = TIME_FORMAT)
+	protected Time revDt;
 	
 	@Property(name = "USERID")
 	protected Integer userId;
@@ -89,7 +88,7 @@ public class StackScript implements Serializable
 		return latestRev;
 	}
 	
-	public Calendar getCreateDt()
+	public Time getCreateDt()
 	{
 		return createDt;
 	}
@@ -104,7 +103,7 @@ public class StackScript implements Serializable
 		return revNote;
 	}
 	
-	public Calendar getRevDt()
+	public Time getRevDt()
 	{
 		return revDt;
 	}
@@ -161,7 +160,7 @@ public class StackScript implements Serializable
 		return this;
 	}
 	
-	public StackScript setCreateDt(Calendar createDt)
+	public StackScript setCreateDt(Time createDt)
 	{
 		this.createDt = createDt;
 		return this;
@@ -179,7 +178,7 @@ public class StackScript implements Serializable
 		return this;
 	}
 	
-	public StackScript setRevDt(Calendar revDt)
+	public StackScript setRevDt(Time revDt)
 	{
 		this.revDt = revDt;
 		return this;

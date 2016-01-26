@@ -1,15 +1,15 @@
 package roth.lib.java.api.linode.data.model;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.LinkedHashMap;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.linode.LinodeConstants;
 
 @Entity
 @SuppressWarnings("serial")
-public class Plan implements Serializable
+public class Plan implements LinodeConstants
 {
 	@Property(name = "PLANID")
 	protected Integer planId;

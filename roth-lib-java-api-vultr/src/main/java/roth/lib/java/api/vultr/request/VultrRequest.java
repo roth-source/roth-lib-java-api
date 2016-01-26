@@ -1,13 +1,12 @@
 package roth.lib.java.api.vultr.request;
 
-import java.io.Serializable;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.vultr.client.VultrConstants;
 
 @Entity
 @SuppressWarnings("serial")
-public class VultrRequest implements Serializable
+public class VultrRequest implements VultrConstants
 {
 	@Property(name = "api_key")
 	protected String apiKey;

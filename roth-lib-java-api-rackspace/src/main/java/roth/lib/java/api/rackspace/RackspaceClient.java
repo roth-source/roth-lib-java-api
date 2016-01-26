@@ -10,14 +10,11 @@ import roth.lib.java.http.HttpResponse;
 
 public abstract class RackspaceClient extends JsonApiClient<Object, Object> implements Characters
 {
-	protected static String TIME_FORMAT	= "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
-	
 	protected IdentityClient identityClient;
 	
 	protected RackspaceClient(boolean debug)
 	{
 		super(debug);
-		setTimeFormat(TIME_FORMAT);
 	}
 	
 	protected RackspaceClient(IdentityClient identityClient, boolean debug)

@@ -1,10 +1,9 @@
 package roth.lib.java.api.digitalocean.model;
 
-import java.util.Calendar;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
 import roth.lib.java.api.digitalocean.DigitalOceanConstants;
+import roth.lib.java.time.Time;
 
 @Entity
 @SuppressWarnings("serial")
@@ -20,10 +19,10 @@ public class Action implements DigitalOceanConstants
 	protected String type;
 	
 	@Property(name = "started_at", timeFormat = TIME_FORMAT)
-	protected Calendar startedAt;
+	protected Time startedAt;
 	
 	@Property(name = "completed_at", timeFormat = TIME_FORMAT)
-	protected Calendar completedAt;
+	protected Time completedAt;
 	
 	@Property(name = "resource_id")
 	protected Integer resourceId;
@@ -51,12 +50,12 @@ public class Action implements DigitalOceanConstants
 		return type;
 	}
 	
-	public Calendar getStartedAt()
+	public Time getStartedAt()
 	{
 		return startedAt;
 	}
 	
-	public Calendar getCompletedAt()
+	public Time getCompletedAt()
 	{
 		return completedAt;
 	}
@@ -89,13 +88,13 @@ public class Action implements DigitalOceanConstants
 		return this;
 	}
 	
-	public Action setStartedAt(Calendar startedAt)
+	public Action setStartedAt(Time startedAt)
 	{
 		this.startedAt = startedAt;
 		return this;
 	}
 	
-	public Action setCompletedAt(Calendar completedAt)
+	public Action setCompletedAt(Time completedAt)
 	{
 		this.completedAt = completedAt;
 		return this;

@@ -1,11 +1,11 @@
 package roth.lib.java.api.digitalocean.model;
 
-import java.util.Calendar;
 import java.util.LinkedList;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
 import roth.lib.java.api.digitalocean.DigitalOceanConstants;
+import roth.lib.java.time.Time;
 
 @Entity
 @SuppressWarnings("serial")
@@ -33,7 +33,7 @@ public class Droplet implements DigitalOceanConstants
 	protected Boolean locked;
 	
 	@Property(name = "created_at", timeFormat = TIME_FORMAT)
-	protected Calendar createdAt;
+	protected Time createdAt;
 	
 	@Property(name = "status")
 	protected String status;
@@ -90,7 +90,7 @@ public class Droplet implements DigitalOceanConstants
 		return locked;
 	}
 	
-	public Calendar getCreatedAt()
+	public Time getCreatedAt()
 	{
 		return createdAt;
 	}
@@ -162,7 +162,7 @@ public class Droplet implements DigitalOceanConstants
 		return this;
 	}
 	
-	public Droplet setCreatedAt(Calendar createdAt)
+	public Droplet setCreatedAt(Time createdAt)
 	{
 		this.createdAt = createdAt;
 		return this;

@@ -1,10 +1,9 @@
 package roth.lib.java.api.twilio.call;
 
-import java.util.Calendar;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
 import roth.lib.java.api.twilio.TwilioResponse;
+import roth.lib.java.time.Time;
 
 @Entity
 @SuppressWarnings("serial")
@@ -19,14 +18,14 @@ public class MakeCallResponse extends TwilioResponse
 	@Property(name = "phone_number_sid")
 	protected String phoneNumberSid;
 	
-	@Property(name = "date_created")
-	protected Calendar dateCreated;
+	@Property(name = "date_created", timeFormat = TIME_FORMAT)
+	protected Time dateCreated;
 	
-	@Property(name = "date_updated")
-	protected Calendar dateUpdated;
+	@Property(name = "date_updated", timeFormat = TIME_FORMAT)
+	protected Time dateUpdated;
 	
-	@Property(name = "date_sent")
-	protected Calendar dateSent;
+	@Property(name = "date_sent", timeFormat = TIME_FORMAT)
+	protected Time dateSent;
 	
 	@Property(name = "to")
 	protected String to;
@@ -78,17 +77,17 @@ public class MakeCallResponse extends TwilioResponse
 		return phoneNumberSid;
 	}
 	
-	public Calendar getDateCreated()
+	public Time getDateCreated()
 	{
 		return dateCreated;
 	}
 	
-	public Calendar getDateUpdated()
+	public Time getDateUpdated()
 	{
 		return dateUpdated;
 	}
 	
-	public Calendar getDateSent()
+	public Time getDateSent()
 	{
 		return dateSent;
 	}
@@ -161,19 +160,19 @@ public class MakeCallResponse extends TwilioResponse
 		return this;
 	}
 	
-	public MakeCallResponse setDateCreated(Calendar dateCreated)
+	public MakeCallResponse setDateCreated(Time dateCreated)
 	{
 		this.dateCreated = dateCreated;
 		return this;
 	}
 	
-	public MakeCallResponse setDateUpdated(Calendar dateUpdated)
+	public MakeCallResponse setDateUpdated(Time dateUpdated)
 	{
 		this.dateUpdated = dateUpdated;
 		return this;
 	}
 	
-	public MakeCallResponse setDateSent(Calendar dateSent)
+	public MakeCallResponse setDateSent(Time dateSent)
 	{
 		this.dateSent = dateSent;
 		return this;
