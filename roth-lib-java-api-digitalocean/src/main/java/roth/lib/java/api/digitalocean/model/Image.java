@@ -1,15 +1,15 @@
 package roth.lib.java.api.digitalocean.model;
 
-import java.io.Serializable;
 import java.util.Calendar;
 import java.util.LinkedList;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 
 @Entity
 @SuppressWarnings("serial")
-public class Image implements Serializable
+public class Image implements DigitalOceanConstants
 {
 	@Property(name = "id")
 	protected Integer id;
@@ -29,7 +29,7 @@ public class Image implements Serializable
 	@Property(name = "regions")
 	protected LinkedList<String> regions;
 	
-	@Property(name = "created_at")
+	@Property(name = "created_at", timeFormat = TIME_FORMAT)
 	protected Calendar createdAt;
 	
 	public Image()

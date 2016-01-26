@@ -1,16 +1,16 @@
 package roth.lib.java.api.digitalocean.key;
 
-import java.io.Serializable;
 import java.util.LinkedList;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 import roth.lib.java.api.digitalocean.model.Key;
 import roth.lib.java.api.digitalocean.model.Meta;
 
 @Entity
 @SuppressWarnings("serial")
-public class GetKeysResponse implements Serializable
+public class GetKeysResponse implements DigitalOceanConstants
 {
 	@Property(name = "ssh_keys")
 	protected LinkedList<Key> keys;

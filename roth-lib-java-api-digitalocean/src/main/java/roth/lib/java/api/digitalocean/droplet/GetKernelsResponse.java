@@ -1,16 +1,16 @@
 package roth.lib.java.api.digitalocean.droplet;
 
-import java.io.Serializable;
 import java.util.LinkedList;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 import roth.lib.java.api.digitalocean.model.Kernel;
 import roth.lib.java.api.digitalocean.model.Meta;
 
 @Entity
 @SuppressWarnings("serial")
-public class GetKernelsResponse implements Serializable
+public class GetKernelsResponse implements DigitalOceanConstants
 {
 	@Property(name = "kernels")
 	protected LinkedList<Kernel> kernels;

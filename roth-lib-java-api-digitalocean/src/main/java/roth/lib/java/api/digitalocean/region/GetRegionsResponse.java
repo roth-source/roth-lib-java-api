@@ -1,15 +1,15 @@
 package roth.lib.java.api.digitalocean.region;
 
-import java.io.Serializable;
 import java.util.LinkedList;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 import roth.lib.java.api.digitalocean.model.Region;
 
 @Entity
 @SuppressWarnings("serial")
-public class GetRegionsResponse implements Serializable
+public class GetRegionsResponse implements DigitalOceanConstants
 {
 	@Property(name = "regions")
 	protected LinkedList<Region> regions;

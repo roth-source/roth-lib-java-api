@@ -1,16 +1,16 @@
 package roth.lib.java.api.digitalocean.droplet;
 
-import java.io.Serializable;
 import java.util.LinkedList;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 import roth.lib.java.api.digitalocean.model.Image;
 import roth.lib.java.api.digitalocean.model.Meta;
 
 @Entity
 @SuppressWarnings("serial")
-public class GetBackupsResponse implements Serializable
+public class GetBackupsResponse implements DigitalOceanConstants
 {
 	@Property(name = "backups")
 	protected LinkedList<Image> backups;

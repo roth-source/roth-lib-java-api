@@ -1,14 +1,13 @@
 package roth.lib.java.api.digitalocean.domain;
 
-import java.io.Serializable;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 import roth.lib.java.api.digitalocean.model.Domain;
 
 @Entity
 @SuppressWarnings("serial")
-public class GetDomainResponse implements Serializable
+public class GetDomainResponse implements DigitalOceanConstants
 {
 	@Property(name = "domain")
 	protected Domain domain;

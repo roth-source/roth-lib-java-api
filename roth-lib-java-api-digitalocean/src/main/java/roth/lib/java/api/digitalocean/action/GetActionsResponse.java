@@ -1,16 +1,16 @@
 package roth.lib.java.api.digitalocean.action;
 
-import java.io.Serializable;
 import java.util.LinkedList;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 import roth.lib.java.api.digitalocean.model.Action;
 import roth.lib.java.api.digitalocean.model.Meta;
 
 @Entity
 @SuppressWarnings("serial")
-public class GetActionsResponse implements Serializable
+public class GetActionsResponse implements DigitalOceanConstants
 {
 	@Property(name = "actions")
 	protected LinkedList<Action> actions;

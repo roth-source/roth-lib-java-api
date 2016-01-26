@@ -1,14 +1,13 @@
 package roth.lib.java.api.digitalocean.imageaction;
 
-import java.io.Serializable;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 import roth.lib.java.api.digitalocean.model.Action;
 
 @Entity
 @SuppressWarnings("serial")
-public class ImageActionResponse implements Serializable
+public class ImageActionResponse implements DigitalOceanConstants
 {
 	@Property(name = "action")
 	protected Action action;

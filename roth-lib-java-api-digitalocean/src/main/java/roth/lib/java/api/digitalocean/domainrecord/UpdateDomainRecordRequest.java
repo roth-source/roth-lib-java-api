@@ -1,14 +1,13 @@
 package roth.lib.java.api.digitalocean.domainrecord;
 
-import java.io.Serializable;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 import roth.lib.java.api.digitalocean.type.DomainRecordType;
 
 @Entity
 @SuppressWarnings("serial")
-public class UpdateDomainRecordRequest implements Serializable
+public class UpdateDomainRecordRequest implements DigitalOceanConstants
 {
 	@Property(name = "type")
 	protected String type;

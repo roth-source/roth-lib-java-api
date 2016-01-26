@@ -1,14 +1,14 @@
 package roth.lib.java.api.digitalocean.model;
 
-import java.io.Serializable;
 import java.util.LinkedList;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 
 @Entity
 @SuppressWarnings("serial")
-public class Region implements Serializable
+public class Region implements DigitalOceanConstants
 {
 	@Property(name = "slug")
 	protected String slug;

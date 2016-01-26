@@ -1,13 +1,12 @@
 package roth.lib.java.api.digitalocean.image;
 
-import java.io.Serializable;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 
 @Entity
 @SuppressWarnings("serial")
-public class UpdateImageRequest implements Serializable
+public class UpdateImageRequest implements DigitalOceanConstants
 {
 	@Property(name = "name")
 	protected String name;

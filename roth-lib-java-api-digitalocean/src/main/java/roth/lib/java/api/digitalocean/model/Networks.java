@@ -1,14 +1,14 @@
 package roth.lib.java.api.digitalocean.model;
 
-import java.io.Serializable;
 import java.util.LinkedList;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 
 @Entity
 @SuppressWarnings("serial")
-public class Networks implements Serializable
+public class Networks implements DigitalOceanConstants
 {
 	@Property(name = "v4")
 	protected LinkedList<Network> v4 = new LinkedList<Network>();

@@ -1,14 +1,13 @@
 package roth.lib.java.api.digitalocean.dropletaction;
 
-import java.io.Serializable;
-
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 import roth.lib.java.api.digitalocean.type.SizeType;
 
 @Entity
 @SuppressWarnings("serial")
-public class DropletActionRequest implements Serializable
+public class DropletActionRequest implements DigitalOceanConstants
 {
 	@Property(name = "type")
 	protected String type;

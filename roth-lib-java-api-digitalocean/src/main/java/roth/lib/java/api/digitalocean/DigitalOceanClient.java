@@ -27,8 +27,6 @@ public abstract class DigitalOceanClient extends JsonApiClient<Object, Object>
 	protected static String AUTHORIZATION	= "Authorization";
 	protected static String BEARER			= "Bearer";
 	
-	protected static String TIME_FORMAT		= "yyyy-MM-dd'T'HH:mm:ss'Z'";
-	
 	protected String token;
 	
 	protected DigitalOceanClient(String token)
@@ -40,7 +38,6 @@ public abstract class DigitalOceanClient extends JsonApiClient<Object, Object>
 	{
 		super(debug);
 		this.token = token;
-		setTimeFormat(TIME_FORMAT);
 	}
 	
 	protected HttpUrl url()

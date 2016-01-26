@@ -1,14 +1,14 @@
 package roth.lib.java.api.digitalocean.model;
 
-import java.io.Serializable;
 import java.util.Calendar;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 
 @Entity
 @SuppressWarnings("serial")
-public class Action implements Serializable
+public class Action implements DigitalOceanConstants
 {
 	@Property(name = "id")
 	protected Integer id;
@@ -19,10 +19,10 @@ public class Action implements Serializable
 	@Property(name = "type")
 	protected String type;
 	
-	@Property(name = "started_at")
+	@Property(name = "started_at", timeFormat = TIME_FORMAT)
 	protected Calendar startedAt;
 	
-	@Property(name = "completed_at")
+	@Property(name = "completed_at", timeFormat = TIME_FORMAT)
 	protected Calendar completedAt;
 	
 	@Property(name = "resource_id")

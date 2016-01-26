@@ -1,16 +1,16 @@
 package roth.lib.java.api.digitalocean.domain;
 
-import java.io.Serializable;
 import java.util.LinkedList;
 
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
+import roth.lib.java.api.digitalocean.DigitalOceanConstants;
 import roth.lib.java.api.digitalocean.model.Domain;
 import roth.lib.java.api.digitalocean.model.Meta;
 
 @Entity
 @SuppressWarnings("serial")
-public class GetDomainsResponse implements Serializable
+public class GetDomainsResponse implements DigitalOceanConstants
 {
 	@Property(name = "domains")
 	protected LinkedList<Domain> domains;
