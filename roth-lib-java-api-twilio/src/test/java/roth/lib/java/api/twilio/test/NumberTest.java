@@ -13,6 +13,8 @@ public class NumberTest extends Test
 		//provision();
 		//get();
 		//delete();
+		//findNumber();
+		//deleteNumber();
 	}
 	
 	public static void getAvailable()
@@ -33,6 +35,16 @@ public class NumberTest extends Test
 	public static void delete()
 	{
 		clientFactory.getNumberClient().delete("");
+	}
+	
+	public static void findNumber()
+	{
+		clientFactory.getNumberClient().findNumber("");
+	}
+	
+	public static void deleteNumber()
+	{
+		clientFactory.getNumberClient().deleteNumber("");
 	}
 	
 }
