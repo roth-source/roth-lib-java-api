@@ -2,6 +2,7 @@ package roth.lib.java.api.twilio;
 
 import java.util.Base64;
 
+import roth.lib.java.Characters;
 import roth.lib.java.api.FormJsonApiClient;
 import roth.lib.java.http.HttpHeaders;
 import roth.lib.java.http.HttpProtocol;
@@ -9,13 +10,16 @@ import roth.lib.java.http.HttpResponse;
 import roth.lib.java.http.HttpUrl;
 import roth.lib.java.http.type.AuthorizationType;
 
-public abstract class TwilioClient extends FormJsonApiClient<Object, TwilioResponse>
+public abstract class TwilioClient extends FormJsonApiClient<Object, TwilioResponse> implements Characters
 {
 	protected static String HOST			= "api.twilio.com";
 	protected static String VERSION			= "/2010-04-01";
 	protected static String ACCOUNTS		= "/Accounts";
 	protected static String MESSAGES		= "/Messages";
 	protected static String CALLS			= "/Calls";
+	protected static String AVAILABLE		= "/AvailablePhoneNumbers";
+	protected static String LOCAL			= "/Local";
+	protected static String INCOMING		= "/IncomingPhoneNumbers";
 	protected static String JSON			= ".json";
 	
 	protected String accountSid;
@@ -50,10 +54,13 @@ public abstract class TwilioClient extends FormJsonApiClient<Object, TwilioRespo
 	@Override
 	protected <T extends TwilioResponse> void checkResponse(HttpResponse<T> response)
 	{
-		TwilioResponse twilioResponse = response.getEntity();
-		if(twilioResponse.getErrorCode() != null)
+		if(response != null)
 		{
-			throw new TwilioException(twilioResponse.getErrorCode() + " : " + twilioResponse.getErrorMessage());
+			TwilioResponse twilioResponse = response.getEntity();
+			if(twilioResponse != null && twilioResponse.getErrorCode() != null)
+			{
+				throw new TwilioException(twilioResponse.getErrorCode() + " : " + twilioResponse.getErrorMessage());
+			}
 		}
 	}
 	

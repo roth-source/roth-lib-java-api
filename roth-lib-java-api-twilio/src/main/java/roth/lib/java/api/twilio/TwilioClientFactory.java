@@ -4,6 +4,7 @@ import java.util.LinkedHashMap;
 
 import roth.lib.java.api.twilio.call.CallClient;
 import roth.lib.java.api.twilio.message.MessageClient;
+import roth.lib.java.api.twilio.number.NumberClient;
 
 public class TwilioClientFactory
 {
@@ -11,11 +12,13 @@ public class TwilioClientFactory
 	
 	protected MessageClient messageClient;
 	protected CallClient callClient;
+	protected NumberClient numberClient;
 	
 	protected TwilioClientFactory(String accountSid, String authToken, boolean debug)
 	{
 		messageClient = new MessageClient(accountSid, authToken, debug);
 		callClient = new CallClient(accountSid, authToken, debug);
+		numberClient = new NumberClient(accountSid, authToken, debug);
 	}
 	
 	public static TwilioClientFactory get(String accountSid, String authToken)
@@ -48,6 +51,11 @@ public class TwilioClientFactory
 	public CallClient getCallClient()
 	{
 		return callClient;
+	}
+	
+	public NumberClient getNumberClient()
+	{
+		return numberClient;
 	}
 	
 }
