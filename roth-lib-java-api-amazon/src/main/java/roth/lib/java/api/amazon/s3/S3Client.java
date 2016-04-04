@@ -19,14 +19,16 @@ import roth.lib.java.lang.List;
 import roth.lib.java.lang.Map;
 import roth.lib.java.outputter.BytesOutputter;
 import roth.lib.java.outputter.StreamOutputter;
+import roth.lib.java.time.Time;
 import roth.lib.java.type.MimeType;
+import roth.lib.java.util.MacUtil;
 import roth.lib.java.util.MessageDigestUtil;
 
 public class S3Client extends AmazonClient
 {
 	protected static final String UNSIGNED_PAYLOAD = "UNSIGNED-PAYLOAD";
 	protected static final String SERVICE = "s3";
-	protected static final String HOST = "amazonaws.com";
+	protected static final String AWS_HOST = "amazonaws.com";
 	protected static final String BLANK_HASH = MessageDigestUtil.digestSha256Base16(BLANK);
 	protected static final int MAX_ATTEMPTS = 3;
 	
@@ -55,7 +57,7 @@ public class S3Client extends AmazonClient
 	
 	protected HttpUrl url(String bucket, String path)
 	{
-		return new HttpUrl(true).setHost(bucket + DOT + SERVICE + DOT + HOST).addPath(path);
+		return new HttpUrl(true).setHost(bucket + DOT + SERVICE + DOT + AWS_HOST).addPath(path);
 	}
 	
 	protected HttpHeader[] getHeaders(HttpUrl url, HttpMethod method, RegionType regionType)
@@ -69,35 +71,35 @@ public class S3Client extends AmazonClient
 		String time = TIME_FORMATTER.format(instant);
 		String date = DATE_FORMATTER.format(instant);
 		Map<String, String> headerMap = new Map<>();
-		headerMap.put(HOST_HEADER, url.getHost());
-		headerMap.put(X_AMZ_DATE_HEADER, time);
-		headerMap.put(X_AMZ_CONTENT_SHA256_HEADER, contentHash);
+		headerMap.put(HOST, url.getHost());
+		headerMap.put(X_AMZ_DATE, time);
+		headerMap.put(X_AMZ_CONTENT_SHA256, contentHash);
 		List<HttpHeader> headers = new List<>();
 		if(contentType != null)
 		{
-			headerMap.put(CONTENT_TYPE_HEADER, contentType.toString());
+			headerMap.put(CONTENT_TYPE, contentType.toString());
 		}
 		else
 		{
-			headers.add(new HttpHeader(CONTENT_TYPE_HEADER, null));
+			headers.add(new HttpHeader(CONTENT_TYPE, null));
 		}
 		///*
 		if(contentLength != null)
 		{
-			headerMap.put(CONTENT_LENGTH_HEADER, String.valueOf(contentLength));
+			headerMap.put(CONTENT_LENGTH, String.valueOf(contentLength));
 		}
 		else
 		{
-			headers.add(new HttpHeader(CONTENT_LENGTH_HEADER, null));
+			headers.add(new HttpHeader(CONTENT_LENGTH, null));
 		}
 		//*/
 		for(Entry<String, String> headerEntry : headerMap.entrySet())
 		{
 			headers.add(new HttpHeader(headerEntry.getKey(), headerEntry.getValue()));
 		}
-		headers.add(new HttpHeader(AUTHORIZATION_HEADER, getAuthorization(accessKey, secretKey, method, url.getPath(), url.getParamMap(), headerMap, contentHash, time, date, regionType, SERVICE)));
-		headers.add(new HttpHeader(ACCEPT_HEADER, null));
-		headers.add(new HttpHeader(DATE_HEADER, null));
+		headers.add(new HttpHeader(AUTHORIZATION, getAuthorization(accessKey, secretKey, method, url.getPath(), url.getParamMap(), headerMap, contentHash, time, date, regionType, SERVICE)));
+		headers.add(new HttpHeader(ACCEPT, null));
+		headers.add(new HttpHeader(DATE, null));
 		return headers.toArray(new HttpHeader[0]);
 	}
 	
@@ -192,6 +194,18 @@ public class S3Client extends AmazonClient
 	{
 		HttpUrl url = url(bucket, path);
 		put(url, new StreamOutputter(input), getHeaders(url, HttpMethod.PUT, regionType, UNSIGNED_PAYLOAD, contentType, contentLength));
+	}
+	
+	public HttpUrl getPresignedUrl(String bucket, String path, Time expiresOn)
+	{
+		HttpUrl url = url(bucket, path);
+		String expires = Long.toString(expiresOn.toTimestamp() / 1000L);
+		String canonicalString = getS3CanonicalString(bucket, url.getPath(), expires);
+		String signature = MacUtil.hmacSha1Base64(secretKey, canonicalString);
+		url.addParam(AWS_ACCESS_KEY_ID, accessKey);
+		url.addParam(EXPIRES, expires);
+		url.addParam(SIGNATURE, signature);
+		return url;
 	}
 	
 }
