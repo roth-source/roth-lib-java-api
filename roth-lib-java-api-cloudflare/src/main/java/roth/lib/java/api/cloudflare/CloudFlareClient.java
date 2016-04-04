@@ -8,6 +8,7 @@ import roth.lib.java.http.HttpMethod;
 import roth.lib.java.http.HttpProtocol;
 import roth.lib.java.http.HttpResponse;
 import roth.lib.java.http.HttpUrl;
+import roth.lib.java.outputter.Outputter;
 
 public abstract class CloudFlareClient extends FormJsonApiClient<CloudFlareRequest, CloudFlareResponse<?>>
 {
@@ -37,7 +38,7 @@ public abstract class CloudFlareClient extends FormJsonApiClient<CloudFlareReque
 	}
 	
 	@Override
-	protected <T extends CloudFlareResponse<?>> T connect(HttpUrl url, CloudFlareRequest cloudFlareRequest, Type type, HttpMethod method, boolean gzip, HttpHeader... headers)
+	protected <T extends CloudFlareResponse<?>> T connect(HttpUrl url, CloudFlareRequest cloudFlareRequest, Outputter outputter, Type responseType, HttpMethod method, boolean gzip, HttpHeader... headers)
 	{
 		if(cloudFlareRequest != null)
 		{
@@ -48,7 +49,7 @@ public abstract class CloudFlareClient extends FormJsonApiClient<CloudFlareReque
 		{
 			throw new CloudFlareException("request cannot be null");
 		}
-		return super.connect(url, cloudFlareRequest, type, method, gzip);
+		return super.connect(url, cloudFlareRequest, outputter, responseType, method, gzip);
 	}
 	
 	@Override

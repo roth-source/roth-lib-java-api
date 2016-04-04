@@ -12,6 +12,7 @@ import roth.lib.java.http.HttpMethod;
 import roth.lib.java.http.HttpProtocol;
 import roth.lib.java.http.HttpResponse;
 import roth.lib.java.http.HttpUrl;
+import roth.lib.java.outputter.Outputter;
 
 public abstract class LinodeClient extends FormJsonApiClient<LinodeRequest, LinodeResponse<?>>
 {
@@ -98,7 +99,7 @@ public abstract class LinodeClient extends FormJsonApiClient<LinodeRequest, Lino
 		return new HttpUrl().setProtocol(HttpProtocol.HTTPS).setHost("api.linode.com");
 	}
 	
-	protected <T extends LinodeResponse<?>> T connect(HttpUrl url, LinodeRequest linodeRequest, Type type, HttpMethod method, boolean gzip, HttpHeader... headers)
+	protected <T extends LinodeResponse<?>> T connect(HttpUrl url, LinodeRequest linodeRequest, Outputter outputter, Type responseType, HttpMethod method, boolean gzip, HttpHeader... headers)
 	{
 		if(linodeRequest != null)
 		{
@@ -108,7 +109,7 @@ public abstract class LinodeClient extends FormJsonApiClient<LinodeRequest, Lino
 		{
 			throw new LinodeException("request cannot be null");
 		}
-		return super.connect(url, linodeRequest, type, method, gzip, headers);
+		return super.connect(url, linodeRequest, outputter, responseType, method, gzip, headers);
 	}
 	
 	protected <T extends LinodeResponse<?>> void checkResponse(HttpResponse<T> response)
