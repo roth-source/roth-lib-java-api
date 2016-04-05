@@ -190,16 +190,53 @@ public class S3Client extends AmazonClient
 	
 	public void putObject(RegionType regionType, String bucket, String path, MimeType contentType, byte[] bytes)
 	{
-		String contentHash = MessageDigestUtil.digestSha256Base16(bytes);
-		HttpUrl url = url(bucket, path);
-		put(url, new BytesOutputter(bytes), getHeaders(url, HttpMethod.PUT, regionType, contentHash, contentType, (long) bytes.length));
+		putObject(regionType, bucket, path, contentType, bytes, 1);
+	}
+	
+	protected void putObject(RegionType regionType, String bucket, String path, MimeType contentType, byte[] bytes, int attempt)
+	{
+		try
+		{
+			HttpUrl url = url(bucket, path);
+			put(url, new BytesOutputter(bytes), getHeaders(url, HttpMethod.PUT, regionType, UNSIGNED_PAYLOAD, contentType, (long) bytes.length));
+		}
+		catch(AmazonException e)
+		{
+			if(attempt < maxAttempts)
+			{
+				putObject(regionType, bucket, path, contentType, bytes, ++attempt);
+			}
+			else
+			{
+				throw e;
+			}
+		}
 	}
 	
 	public void putObject(RegionType regionType, String bucket, String path, MimeType contentType, File file) throws IOException
 	{
-		try(FileInputStream input = new FileInputStream(file))
+		putObject(regionType, bucket, path, contentType, file, 1);
+	}
+	
+	protected void putObject(RegionType regionType, String bucket, String path, MimeType contentType, File file, int attempt) throws IOException
+	{
+		try
 		{
-			putObject(regionType, bucket, path, contentType, input, null);
+			try(FileInputStream input = new FileInputStream(file))
+			{
+				putObject(regionType, bucket, path, contentType, input, null);
+			}
+		}
+		catch(AmazonException e)
+		{
+			if(attempt < maxAttempts)
+			{
+				putObject(regionType, bucket, path, contentType, file, ++attempt);
+			}
+			else
+			{
+				throw e;
+			}
 		}
 	}
 	
