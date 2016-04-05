@@ -23,6 +23,7 @@ import roth.lib.java.time.Time;
 import roth.lib.java.type.MimeType;
 import roth.lib.java.util.MacUtil;
 import roth.lib.java.util.MessageDigestUtil;
+import roth.lib.java.xml.XmlMapper;
 
 public class S3Client extends AmazonClient
 {
@@ -108,7 +109,24 @@ public class S3Client extends AmazonClient
 	{
 		if(!response.isSuccess())
 		{
-			throw new AmazonException(response.getStatus());
+			StringBuilder builder = new StringBuilder();
+			builder.append(response.getStatus());
+			try
+			{
+				S3Error error = new XmlMapper().deserialize(response.getInput(), S3Error.class);
+				if(error != null)
+				{
+					builder.append(" : ");
+					builder.append(error.getCode());
+					builder.append(" : ");
+					builder.append(error.getMessage());
+				}
+			}
+			catch(Exception e)
+			{
+				
+			}
+			throw new AmazonException(builder.toString());
 		}
 	}
 	

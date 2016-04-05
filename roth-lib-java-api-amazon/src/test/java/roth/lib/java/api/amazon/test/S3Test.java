@@ -30,8 +30,9 @@ public class S3Test extends Test
 	
 	public static void putObject() throws Exception
 	{
-		File file = new File("dev/test.txt");
-		clientFactory.getS3Client().putObject(RegionType.US_WEST_2, "aptexxtestupload", "test9.txt", MimeType.TEXT_PLAIN, file);
+		//File file = new File("dev/test.txt");
+		File file = new File("/Users/User/Downloads/test.txt");
+		clientFactory.getS3Client().putObject(RegionType.US_EAST_1, "aptexxappdata", "TEMP/test.txt", MimeType.TEXT_PLAIN, file);
 		//clientFactory.getS3Client().putObject(RegionType.US_WEST_2, "aptexxtestupload", "test9.txt", MimeType.TEXT_PLAIN, FileUtil.toBytes(file));
 	}
 	
