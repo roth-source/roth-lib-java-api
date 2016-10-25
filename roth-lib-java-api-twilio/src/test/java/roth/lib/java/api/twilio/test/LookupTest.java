@@ -17,7 +17,7 @@ public class LookupTest extends Test
 	
 	public static void lookupCarrier()
 	{
-		clientFactory.getLookupClient().lookupCarrier("3852094060");
+		clientFactory.getLookupClient().lookupCarrier("8017851207");
 	}
 	
 	public static void lookupCallerName()
