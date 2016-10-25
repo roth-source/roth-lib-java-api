@@ -3,6 +3,7 @@ package roth.lib.java.api.twilio;
 import java.util.LinkedHashMap;
 
 import roth.lib.java.api.twilio.call.CallClient;
+import roth.lib.java.api.twilio.lookup.LookupClient;
 import roth.lib.java.api.twilio.message.MessageClient;
 import roth.lib.java.api.twilio.number.NumberClient;
 
@@ -13,12 +14,14 @@ public class TwilioClientFactory
 	protected MessageClient messageClient;
 	protected CallClient callClient;
 	protected NumberClient numberClient;
+	protected LookupClient lookupClient;
 	
 	protected TwilioClientFactory(String accountSid, String authToken, boolean debug)
 	{
 		messageClient = new MessageClient(accountSid, authToken, debug);
 		callClient = new CallClient(accountSid, authToken, debug);
 		numberClient = new NumberClient(accountSid, authToken, debug);
+		lookupClient = new LookupClient(accountSid, authToken, debug);
 	}
 	
 	public static TwilioClientFactory get(String accountSid, String authToken)
@@ -56,6 +59,11 @@ public class TwilioClientFactory
 	public NumberClient getNumberClient()
 	{
 		return numberClient;
+	}
+	
+	public LookupClient getLookupClient()
+	{
+		return lookupClient;
 	}
 	
 }

@@ -52,6 +52,12 @@ public abstract class TwilioClient extends FormJsonApiClient<Object, TwilioRespo
 	}
 	
 	@Override
+	protected <T extends TwilioResponse> void checkError(HttpResponse<T> response)
+	{
+		throw new TwilioException(response.getStatus().toString());
+	}
+	
+	@Override
 	protected <T extends TwilioResponse> void checkResponse(HttpResponse<T> response)
 	{
 		if(response != null)
