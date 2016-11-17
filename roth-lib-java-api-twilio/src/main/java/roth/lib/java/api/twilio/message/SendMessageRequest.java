@@ -3,6 +3,7 @@ package roth.lib.java.api.twilio.message;
 import roth.lib.java.annotation.Entity;
 import roth.lib.java.annotation.Property;
 import roth.lib.java.api.twilio.TwilioConstants;
+import roth.lib.java.lang.List;
 
 @Entity
 @SuppressWarnings("serial")
@@ -18,7 +19,7 @@ public class SendMessageRequest implements TwilioConstants
 	protected String body;
 	
 	@Property(name = "MediaUrl")
-	protected String mediaUrl;
+	protected List<String> mediaUrls = new List<>();
 	
 	@Property(name = "StatusCallback")
 	protected String statusCallback;
@@ -45,9 +46,9 @@ public class SendMessageRequest implements TwilioConstants
 		return body;
 	}
 	
-	public String getMediaUrl()
+	public List<String> getMediaUrls()
 	{
-		return mediaUrl;
+		return mediaUrls;
 	}
 	
 	public String getStatusCallback()
@@ -73,9 +74,15 @@ public class SendMessageRequest implements TwilioConstants
 		return this;
 	}
 	
-	public SendMessageRequest setMediaUrl(String mediaUrl)
+	public SendMessageRequest addMediaUrl(String mediaUrl)
 	{
-		this.mediaUrl = mediaUrl;
+		this.mediaUrls.add(mediaUrl);
+		return this;
+	}
+	
+	public SendMessageRequest setMediaUrl(List<String> mediaUrls)
+	{
+		this.mediaUrls = mediaUrls;
 		return this;
 	}
 	

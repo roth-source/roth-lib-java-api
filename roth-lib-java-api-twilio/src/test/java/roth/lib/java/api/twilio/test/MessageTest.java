@@ -7,7 +7,7 @@ public class MessageTest extends Test
 	
 	public static void main(String[] args)
 	{
-		sendMessage();
+		//sendMessage();
 	}
 	
 	public static void sendMessage()
