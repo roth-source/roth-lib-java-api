@@ -21,6 +21,7 @@ public abstract class TwilioClient extends FormJsonApiClient<Object, TwilioRespo
 	protected static String LOCAL			= "/Local";
 	protected static String INCOMING		= "/IncomingPhoneNumbers";
 	protected static String JSON			= ".json";
+	protected static Integer STOP_CODE		= 21610;
 	
 	protected String accountSid;
 	protected String authToken;
@@ -54,6 +55,15 @@ public abstract class TwilioClient extends FormJsonApiClient<Object, TwilioRespo
 	@Override
 	protected <T extends TwilioResponse> void checkError(HttpResponse<T> response)
 	{
+		Object responseEntity = response.getEntity();
+		if(responseEntity instanceof TwilioResponse)
+		{
+			TwilioResponse twilioResponse = (TwilioResponse) responseEntity;
+			if(STOP_CODE.equals(twilioResponse.getErrorCode()))
+			{
+				throw new TwilioStopException(twilioResponse.getErrorMessage());
+			}
+		}
 		throw new TwilioException(response.getStatus().toString());
 	}
 	

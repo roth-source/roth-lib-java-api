@@ -13,10 +13,10 @@ public class TwilioResponse implements TwilioConstants
 	@Property(name = "api_version")
 	protected String apiVersion;
 	
-	@Property(name = "error_code")
-	protected String errorCode;
+	@Property(name = "code")
+	protected Integer errorCode;
 	
-	@Property(name = "error_message")
+	@Property(name = "message")
 	protected String errorMessage;
 	
 	public TwilioResponse()
@@ -34,7 +34,7 @@ public class TwilioResponse implements TwilioConstants
 		return apiVersion;
 	}
 	
-	public String getErrorCode()
+	public Integer getErrorCode()
 	{
 		return errorCode;
 	}
@@ -56,7 +56,7 @@ public class TwilioResponse implements TwilioConstants
 		return this;
 	}
 	
-	public TwilioResponse setErrorCode(String errorCode)
+	public TwilioResponse setErrorCode(Integer errorCode)
 	{
 		this.errorCode = errorCode;
 		return this;
