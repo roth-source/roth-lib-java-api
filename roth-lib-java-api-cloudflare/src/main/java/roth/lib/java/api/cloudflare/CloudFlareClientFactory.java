@@ -2,24 +2,20 @@ package roth.lib.java.api.cloudflare;
 
 import java.util.LinkedHashMap;
 
-import roth.lib.java.api.cloudflare.access.AccessClient;
-import roth.lib.java.api.cloudflare.modify.ModifyClient;
-import roth.lib.java.api.cloudflare.record.RecordClient;
-
+import roth.lib.java.api.cloudflare.dnsrecord.DnsRecordClient;
+import roth.lib.java.api.cloudflare.zone.ZoneClient;
 
 public class CloudFlareClientFactory
 {
 	protected static LinkedHashMap<String, CloudFlareClientFactory> instanceMap = new LinkedHashMap<String, CloudFlareClientFactory>();
 	
-	protected AccessClient accessClient;
-	protected ModifyClient modifyClient;
-	protected RecordClient recordClient;
+	protected ZoneClient zoneClient;
+	protected DnsRecordClient dnsRecordClient;
 	
 	protected CloudFlareClientFactory(String email, String token, boolean debug)
 	{
-		accessClient = new AccessClient(email, token, debug);
-		modifyClient = new ModifyClient(email, token, debug);
-		recordClient = new RecordClient(email, token, debug);
+		zoneClient = new ZoneClient(email, token, debug);
+		dnsRecordClient = new DnsRecordClient(email, token, debug);
 	}
 	
 	public static CloudFlareClientFactory get(String email, String token)
@@ -38,25 +34,20 @@ public class CloudFlareClientFactory
 		}
 		return ClientFactory;
 	}
-
+	
 	public static LinkedHashMap<String, CloudFlareClientFactory> getInstanceMap()
 	{
 		return instanceMap;
 	}
 	
-	public AccessClient getAccessClient()
+	public ZoneClient getZoneClient()
 	{
-		return accessClient;
+		return zoneClient;
 	}
 	
-	public ModifyClient getModifyClient()
+	public DnsRecordClient getDnsRecordClient()
 	{
-		return modifyClient;
-	}
-	
-	public RecordClient getRecordClient()
-	{
-		return recordClient;
+		return dnsRecordClient;
 	}
 	
 }

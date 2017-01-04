@@ -11,7 +11,7 @@ public class Test
 {
 	protected static Properties test = PropertiesUtil.load(new File("dev/test.properties"));
 	protected static CloudFlareClientFactory clientFactory = CloudFlareClientFactory.get(test.getProperty("email"), test.getProperty("apiKey"), true);
-	protected static String domain = test.getProperty("domain");
+	protected static String zoneId = test.getProperty("zoneId");
 	
 	public static void main(String[] args) throws Exception
 	{

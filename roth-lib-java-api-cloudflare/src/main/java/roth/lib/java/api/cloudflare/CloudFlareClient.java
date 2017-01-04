@@ -1,34 +1,31 @@
 package roth.lib.java.api.cloudflare;
 
-import java.lang.reflect.Type;
-
-import roth.lib.java.api.FormJsonApiClient;
-import roth.lib.java.http.HttpHeader;
-import roth.lib.java.http.HttpMethod;
+import roth.lib.java.api.JsonApiClient;
+import roth.lib.java.http.HttpHeaders;
 import roth.lib.java.http.HttpProtocol;
 import roth.lib.java.http.HttpResponse;
 import roth.lib.java.http.HttpUrl;
-import roth.lib.java.outputter.Outputter;
 
-public abstract class CloudFlareClient extends FormJsonApiClient<CloudFlareRequest, CloudFlareResponse<?>>
+public abstract class CloudFlareClient extends JsonApiClient<Object, CloudFlareResponse<?>>
 {
-	protected static String HOST		= "www.cloudflare.com";
-	protected static String PATH		= "/api_json.html";
-	protected static String SUCCESS 	= "success";
+	protected static String HOST			= "api.cloudflare.com";
+	protected static String PATH			= "/client/v4/";
+	protected static String X_AUTH_EMAIL	= "X-Auth-Email";
+	protected static String X_AUTH_KEY		= "X-Auth-Key";
 	
 	protected String email;
-	protected String token;
+	protected String apiKey;
 	
-	protected CloudFlareClient(String email, String token)
+	protected CloudFlareClient(String email, String apiKey)
 	{
-		this(email, token, false);
+		this(email, apiKey, false);
 	}
 	
-	protected CloudFlareClient(String email, String token, boolean debug)
+	protected CloudFlareClient(String email, String apiKey, boolean debug)
 	{
 		super(debug);
 		this.email = email;
-		this.token = token;
+		this.apiKey = apiKey;
 	}
 	
 	@Override
@@ -38,18 +35,15 @@ public abstract class CloudFlareClient extends FormJsonApiClient<CloudFlareReque
 	}
 	
 	@Override
-	protected <T extends CloudFlareResponse<?>> T connect(HttpUrl url, CloudFlareRequest cloudFlareRequest, Outputter outputter, Type responseType, HttpMethod method, boolean gzip, HttpHeader... headers)
+	protected void setHeaders(HttpHeaders headers)
 	{
-		if(cloudFlareRequest != null)
-		{
-			cloudFlareRequest.setEmail(email);
-			cloudFlareRequest.setToken(token);
-		}
-		else
-		{
-			throw new CloudFlareException("request cannot be null");
-		}
-		return super.connect(url, cloudFlareRequest, outputter, responseType, method, gzip);
+		headers.setHeader(X_AUTH_EMAIL, email).setHeader(X_AUTH_KEY, apiKey);
+	}
+	
+	@Override
+	protected <T extends CloudFlareResponse<?>> void checkError(HttpResponse<T> response)
+	{
+		throw new CloudFlareException(response.getStatus().toString());
 	}
 	
 	@Override
@@ -58,14 +52,17 @@ public abstract class CloudFlareClient extends FormJsonApiClient<CloudFlareReque
 		T cloudFlareResponse = response.getEntity();
 		if(cloudFlareResponse != null)
 		{
-			String result = cloudFlareResponse.getResult();
-			if(result == null)
+			if(!cloudFlareResponse.isSuccess())
 			{
-				throw new CloudFlareException("result field is null");
-			}
-			else if(!SUCCESS.equalsIgnoreCase(result))
-			{
-				throw new CloudFlareException(result + " : " + cloudFlareResponse.getMsg());
+				StringBuilder builder = new StringBuilder();
+				String seperator = "";
+				for(CloudFlareError error : cloudFlareResponse.getErrors())
+				{
+					builder.append(seperator);
+					builder.append(error.getCode() + " : " + error.getMessage());
+					seperator = ", ";
+				}
+				throw new CloudFlareException(builder.toString());
 			}
 		}
 	}
