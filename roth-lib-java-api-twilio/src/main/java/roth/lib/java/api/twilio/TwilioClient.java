@@ -55,29 +55,27 @@ public abstract class TwilioClient extends FormJsonApiClient<Object, TwilioRespo
 	@Override
 	protected <T extends TwilioResponse> void checkError(HttpResponse<T> response)
 	{
-		Object responseEntity = response.getEntity();
-		if(responseEntity instanceof TwilioResponse)
-		{
-			TwilioResponse twilioResponse = (TwilioResponse) responseEntity;
-			if(STOP_CODE.equals(twilioResponse.getErrorCode()))
-			{
-				throw new TwilioStopException(twilioResponse.getErrorMessage());
-			}
-		}
-		throw new TwilioException(response.getStatus().toString());
-	}
-	
-	@Override
-	protected <T extends TwilioResponse> void checkResponse(HttpResponse<T> response)
-	{
 		if(response != null)
 		{
 			TwilioResponse twilioResponse = response.getEntity();
 			if(twilioResponse != null && twilioResponse.getErrorCode() != null)
 			{
-				throw new TwilioException(twilioResponse.getErrorCode() + " : " + twilioResponse.getErrorMessage());
+				if(twilioResponse.getErrorCode().equals(STOP_CODE))
+				{
+					throw new TwilioStopException(twilioResponse.getErrorCode() + " : " + twilioResponse.getErrorMessage());
+				}
+				else
+				{
+					throw new TwilioException(twilioResponse.getErrorCode() + " : " + twilioResponse.getErrorMessage());
+				}
 			}
 		}
+	}
+	
+	@Override
+	protected <T extends TwilioResponse> void checkResponse(HttpResponse<T> response)
+	{
+		
 	}
 	
 }
