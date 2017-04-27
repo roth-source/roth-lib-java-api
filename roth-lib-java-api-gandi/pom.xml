@@ -4,7 +4,7 @@
 		<groupId>roth.lib.java.api</groupId>
 		<artifactId>roth-lib-java-api-pom</artifactId>
 		<relativePath>../roth-lib-java-api-pom</relativePath>
-		<version>0.2.8-SNAPSHOT</version>
+		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>roth-lib-java-api-gandi</artifactId>
 </project>
