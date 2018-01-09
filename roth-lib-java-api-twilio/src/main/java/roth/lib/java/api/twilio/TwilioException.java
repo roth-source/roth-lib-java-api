@@ -5,6 +5,11 @@ public class TwilioException extends RuntimeException
 {
 	protected Integer code;
 	
+	public TwilioException(String message)
+	{
+		super(message);
+	}
+	
 	public TwilioException(Integer code, String message)
 	{
 		super(message);
