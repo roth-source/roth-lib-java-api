@@ -62,11 +62,11 @@ public abstract class TwilioClient extends FormJsonApiClient<Object, TwilioRespo
 			{
 				if(STOP_CODE.equals(twilioResponse.getErrorCode()))
 				{
-					throw new TwilioStopException(twilioResponse.getErrorCode() + " : " + twilioResponse.getErrorMessage());
+					throw new TwilioStopException(twilioResponse.getErrorCode(), twilioResponse.getErrorMessage());
 				}
 				else
 				{
-					throw new TwilioException(twilioResponse.getErrorCode() + " : " + twilioResponse.getErrorMessage());
+					throw new TwilioException(twilioResponse.getErrorCode(), twilioResponse.getErrorMessage());
 				}
 			}
 		}
